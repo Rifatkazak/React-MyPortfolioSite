@@ -6,7 +6,6 @@ function App() {
   return (
     <PortfolioProvider>
       <AppRouter/>
-      <div>Hello</div>
     </PortfolioProvider>
         );
 }
