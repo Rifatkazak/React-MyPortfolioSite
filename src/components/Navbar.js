@@ -6,11 +6,19 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import { makeStyles } from '@mui/styles';
+
+const useStyles = makeStyles({
+  NavbarContainer: {
+    backgroundColor: "red",
+  },
+});
 
 export function Navbar() {
+  const classes = useStyles();
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static"  className = {classes.NavbarContainer} >
         <Toolbar>
           <IconButton
             size="large"
@@ -19,12 +27,18 @@ export function Navbar() {
             aria-label="menu"
             sx={{ mr: 2 }}
           >
-            <MenuIcon />
+            
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            News
+            Esat Yasar
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit">Home</Button>
+          <Button color="inherit">Resume</Button>
+          <Button color="inherit">Projects</Button>
+          <Button color="inherit">Skills</Button>
+          <Button color="inherit">Blog</Button>
+          <Button color="inherit">Contacts</Button>
+          <MenuIcon />
         </Toolbar>
       </AppBar>
     </Box>
