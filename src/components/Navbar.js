@@ -8,11 +8,13 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { makeStyles } from '@mui/styles';
 
-const useStyles = makeStyles({
-  NavbarContainer: {
-    backgroundColor: "red",
-  },
-});
+const useStyles = makeStyles((theme) => ({
+  root :{
+    buttons: {
+      marginRight : "12rem"
+  }}
+  
+}));
 
 export function Navbar() {
   const classes = useStyles();
@@ -32,12 +34,14 @@ export function Navbar() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Esat Yasar
           </Typography>
-          <Button color="inherit">Home</Button>
-          <Button color="inherit">Resume</Button>
-          <Button color="inherit">Projects</Button>
-          <Button color="inherit">Skills</Button>
-          <Button color="inherit">Blog</Button>
-          <Button color="inherit">Contacts</Button>
+          <div className={{ root: classes.buttons}}>
+            <Button color="inherit">Home</Button>
+            <Button color="inherit">Resume</Button>
+            <Button color="inherit">Projects</Button>
+            <Button color="inherit">Skills</Button>
+            <Button color="inherit">Blog</Button>
+            <Button color="inherit">Contacts</Button>
+          </div>
           <MenuIcon />
         </Toolbar>
       </AppBar>
