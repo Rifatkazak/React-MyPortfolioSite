@@ -16,8 +16,8 @@ function AppRouter(){
             <Navbar />
             <Switch>
                   <Route path="/Home" exact component={Home} />
-                {/* <Route path="/Resume" exact component={Resume} />
-                 <Route path="/Projects" exact component={Projects} />
+                  <Route path="/Resume" exact component={Resume} />
+                {/* <Route path="/Projects" exact component={Projects} />
                  <Route path="/Skills" exact component={Skills} />
                  <Route path="/Blog" exact  component={Blog} />
                  <Route path="/Contacts" exact component={Contacts} />

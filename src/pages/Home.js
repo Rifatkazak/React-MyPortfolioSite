@@ -6,13 +6,13 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import profile from "../assets/profile.jpeg";
 import MailIcon from '@mui/icons-material/Mail';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import AttachmentIcon from '@mui/icons-material/Attachment';
+import {NavLink} from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
 
@@ -54,10 +54,18 @@ export default function Home() {
                 </Typography>
             </CardContent>
             <CardActions className = {classes.icons}>
-                <MailIcon />
-                <LinkedInIcon />
-                <GitHubIcon/>
-                <AttachmentIcon/>
+                <a href="mailto:esatyasar91@email.com">
+                    <MailIcon />
+                </a>
+                <a href = "https://www.linkedin.com/in/esat-yasar/">
+                    <LinkedInIcon />
+                </a>
+                <a href = "https://github.com/esatyasar">
+                    <GitHubIcon />
+                </a>
+                <NavLink to ="/Resume">
+                    <AttachmentIcon />
+                </NavLink>
             </CardActions>
         </Card>
       </Container>
