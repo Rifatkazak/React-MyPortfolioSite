@@ -48,6 +48,10 @@ const useStyles = makeStyles((theme) => ({
   },
   certificate:{
     listStyle :"none",
+  },
+  bodyText:{
+    fontSize: "1.3rem",
+    fontWeight : "500",
   }
 }));
 
@@ -104,7 +108,7 @@ export default function Home() {
           <Typography variant="h2" gutterBottom component="div">
             Biograpghy
           </Typography>
-          <Typography variant="body1" gutterBottom>
+          <p className = {classes.bodyText}>
             Hi, I’m Man Parvesh, currently working as a Software Engineer
             (Member of Technical Staff) at VMware in the SRE Automation Platform
             team. I have a Master’s degree in CS from UT Dallas and a Bachelor
@@ -117,7 +121,7 @@ export default function Home() {
             open-source enthusiast and have created projects that were listed in
             GitHub trending. My interests lie in solving problems related to
             large-scale distributed software systems.
-          </Typography>
+          </p>
           <div className={classes.subtitles}>
             <ul>
               <Typography variant="h5" gutterBottom component="div">
