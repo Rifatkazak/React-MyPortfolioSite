@@ -1,6 +1,4 @@
 import React,{useState} from 'react'
-import { Button } from '@mui/material'
-import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import styles from "./style.module.css"
 import Typography from '@mui/material/Typography';
@@ -10,11 +8,9 @@ import CardActions from '@mui/material/CardActions';
 
 
 function Comments() {
-    const initialValues = {
-        
-    }
+    
     const [data, setData] = useState([{id :0, name : "Rifat", content : "He is a good developer"}, {id :1, name : "mark", content : "He is so helpful.."}])
-    const [counter,setCounter] = useState(1)
+    const [counter,setCounter] = useState(2)
     
     const [comments, setComments] = useState({id :counter, name : "", content : ""})
 
@@ -33,7 +29,7 @@ function Comments() {
     return (
         <div className="comments">
             <div className={styles.container}>
-                <h3 className={styles.title}> Your feedback is my Plessure</h3>
+                <h3 className={styles.title}> Your feedback is important for me</h3>
                 <TextField
                     className={styles.nameTextfield}
                     id="outlined-textarea"

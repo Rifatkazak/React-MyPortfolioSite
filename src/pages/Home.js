@@ -12,24 +12,28 @@ import MailIcon from "@mui/icons-material/Mail";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import AttachmentIcon from "@mui/icons-material/Attachment";
-import { NavLink } from "react-router-dom";
 import Box from "@mui/material/Box";
 import VerifiedUserIcon from "@mui/icons-material/VerifiedUser";
 import cv from "../assets/Rifat_Kazak_Resume.pdf"
+import styles from "./style.module.css"
 
 const useStyles = makeStyles((theme) => ({
   text: {
     marginTop: "7rem",
     marginLeft: "5rem",
+    order : "1",
+    height : "100%"
   },
   card: {
     marginTop: "7rem",
+
   },
   avatar: {
     margin: "auto",
   },
   cardContent: {
     textAlign: "center",
+    
   },
   icons: {
     width: "60%",
@@ -51,9 +55,10 @@ const useStyles = makeStyles((theme) => ({
     listStyle :"none",
   },
   bodyText:{
-    fontSize: "1.3rem",
+    fontSize: "1rem",
     fontWeight : "500",
-  }
+  },
+
 }));
 
 export default function Home() {
@@ -63,9 +68,10 @@ export default function Home() {
       <CssBaseline />
       <Container
         maxWidth="xl"
-        sx={{ display: "flex" }}
+        sx={{ display: "flex"}}
+        className={styles.cardContainer}
       >
-        <Card sx={{ maxWidth: 345 }} className={classes.card}>
+        <Card sx={{ minWidth: 300 }} className={classes.card}>
           <Avatar
             className={classes.avatar}
             alt="Rifat Kazak"
@@ -94,7 +100,7 @@ export default function Home() {
             <a href="https://github.com/Rifatkazak" className={classes.link} target="blank">
               <GitHubIcon />
             </a>
-            <a href={cv} className={classes.link}>
+            <a href={cv} className={classes.link} target="blank">
               <AttachmentIcon />
             </a>
           </CardActions>
@@ -107,8 +113,8 @@ export default function Home() {
             /* backgroundColor: "primary.main", */
           }}
         >
-          <Typography variant="h2" gutterBottom component="div">
-            Biograpghy
+          <Typography  gutterBottom component="div">
+            <h2>Biograpghy</h2>
           </Typography>
           <p className = {classes.bodyText}>
           After working as a mechanical engineer for seven years, I realized that I was interested in software development.And so ı have built up a diverse range of skills and qualities about websites and web apps.

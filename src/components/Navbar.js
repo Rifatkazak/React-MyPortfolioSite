@@ -5,7 +5,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
+
 import { makeStyles } from '@mui/styles';
 import { NavLink } from 'react-router-dom';
 
@@ -24,8 +24,8 @@ const useStyles = makeStyles((theme) => ({
 export function Navbar() {
   const classes = useStyles();
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static"  className = {classes.NavbarContainer} >
+    <Box sx={{ flexGrow: 1 }} >
+      <AppBar position="fixed"  className = {classes.NavbarContainer} >
         <Toolbar>
           <IconButton
             size="large"
@@ -46,7 +46,6 @@ export function Navbar() {
             <NavLink to="/Comments" style={{ textDecoration: 'none',color: 'inherit' }}><Button color="inherit">Comments</Button></NavLink>
             <NavLink to="/Contacts" style={{ textDecoration: 'none',color: 'inherit' }} ><Button color="inherit">Contacts</Button></NavLink>
           </div>
-          <MenuIcon />
         </Toolbar>
       </AppBar>
     </Box>
