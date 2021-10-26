@@ -1,0 +1,31 @@
+.container{
+    height:  30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.commentTextfield {
+    width : 500px;
+    margin-bottom: 2rem;
+    color : black;
+}
+.commentsBtn {
+    width : 150px ;
+    height : 35px;
+    color: rgb(241, 236, 227);
+    background-color: rgb(154, 152, 160);
+    
+    
+}
+.nameTextfield {
+    width : 500px;
+    margin-bottom: 2rem;
+}
+.contentCard {
+    margin-left : 5rem;
+}
+.cards{
+    margin:auto ;
+    margin-top : 5rem ;
+}

@@ -15,6 +15,7 @@ import AttachmentIcon from "@mui/icons-material/Attachment";
 import { NavLink } from "react-router-dom";
 import Box from "@mui/material/Box";
 import VerifiedUserIcon from "@mui/icons-material/VerifiedUser";
+import cv from "../assets/Rifat_Kazak_Resume.pdf"
 
 const useStyles = makeStyles((theme) => ({
   text: {
@@ -67,34 +68,35 @@ export default function Home() {
         <Card sx={{ maxWidth: 345 }} className={classes.card}>
           <Avatar
             className={classes.avatar}
-            alt="Esat Yasar"
+            alt="Rifat Kazak"
             src={profile}
             sx={{ width: 300, height: 300 }}
           />
           <CardContent className={classes.cardContent}>
             <Typography gutterBottom variant="h5" component="div">
-              Esat Yasar
+              Rifat KAZAK 
             </Typography>
             <Typography variant="body2" color="text.secondary">
               Full Stack Developer
             </Typography>
           </CardContent>
           <CardActions className={classes.icons}>
-            <a href="mailto:esatyasar91@email.com" className={classes.link}>
+            <a href="mailto:rifatkazak20@gmail.com" className={classes.link}>
               <MailIcon />
             </a>
             <a
-              href="https://www.linkedin.com/in/esat-yasar/"
+              href="https://www.linkedin.com/in/rifat-kazak/"
               className={classes.link}
+              target="blank"
             >
               <LinkedInIcon />
             </a>
-            <a href="https://github.com/esatyasar" className={classes.link}>
+            <a href="https://github.com/Rifatkazak" className={classes.link} target="blank">
               <GitHubIcon />
             </a>
-            <NavLink to="/Resume" className={classes.link}>
+            <a href={cv} className={classes.link}>
               <AttachmentIcon />
-            </NavLink>
+            </a>
           </CardActions>
         </Card>
         <Box
@@ -109,27 +111,17 @@ export default function Home() {
             Biograpghy
           </Typography>
           <p className = {classes.bodyText}>
-            Hi, I’m Man Parvesh, currently working as a Software Engineer
-            (Member of Technical Staff) at VMware in the SRE Automation Platform
-            team. I have a Master’s degree in CS from UT Dallas and a Bachelor
-            of Technology degree from the Indian Institute of Technology (IIT)
-            Guwahati. Previously, I worked at Works Applications, Singapore as a
-            Software Engineer, where I worked on delivering libraries,
-            microservices and distributed multi-tenant architecture to thousands
-            of developers inside the company who utilized them to build various
-            products for our customers. Aside from work, I am also an
-            open-source enthusiast and have created projects that were listed in
-            GitHub trending. My interests lie in solving problems related to
-            large-scale distributed software systems.
+          After working as a mechanical engineer for seven years, I realized that I was interested in software development.And so ı have built up a diverse range of skills and qualities about websites and web apps.
+I am passionate about new technologies and concepts to develop innovative and creative solutions to problems.Also ı can create algorithms effectively, interact positively and communicate appropriately with team members. I always eager to learn various technologies, tools and libraries.Especially interested in Mobile/Front end/Web Development, Jira, SDLC, HTML5, CSS3, Bootstrap, SASS, GitHub, Python, SQL, React.js and JavaScript. I am still disposed to learn new things in this field. You can review my projects on my GitHub account.
           </p>
           <div className={classes.subtitles}>
             <ul>
               <Typography variant="h5" gutterBottom component="div">
                     Interests
               </Typography>
-              <li>Distributed Computing</li>
-              <li>Cloud Computing</li>
-              <li>Software Engineering</li>
+              <li>Travelling to new country</li>
+              <li>Camping in Natural Sights</li>
+              <li>Read an article about new technology</li>
             </ul>
             <ul className = {classes.certificate}>
               <Typography variant="h5" gutterBottom component="div">

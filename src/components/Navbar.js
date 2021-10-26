@@ -7,12 +7,17 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { makeStyles } from '@mui/styles';
+import { NavLink } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root :{
     buttons: {
-      marginRight : "12rem"
-  }}
+      marginRight : "12rem",   
+  },
+  navlink : {
+    textDecoration : "none"
+  }
+}
   
 }));
 
@@ -32,15 +37,14 @@ export function Navbar() {
             
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Esat Yasar
+            Rifat KAZAK
           </Typography>
           <div className={{ root: classes.buttons}}>
-            <Button color="inherit">Home</Button>
-            <Button color="inherit">Resume</Button>
-            <Button color="inherit">Projects</Button>
-            <Button color="inherit">Skills</Button>
-            <Button color="inherit">Blog</Button>
-            <Button color="inherit">Contacts</Button>
+            <NavLink to="/" style={{ textDecoration: 'none',color: 'inherit' }} >
+            <Button color="inherit"  >About Me</Button></NavLink> 
+            <NavLink to="/Projects" style={{ textDecoration: 'none',color: 'inherit' }}><Button color="inherit">Projects</Button></NavLink> 
+            <NavLink to="/Comments" style={{ textDecoration: 'none',color: 'inherit' }}><Button color="inherit">Comments</Button></NavLink>
+            <NavLink to="/Contacts" style={{ textDecoration: 'none',color: 'inherit' }} ><Button color="inherit">Contacts</Button></NavLink>
           </div>
           <MenuIcon />
         </Toolbar>

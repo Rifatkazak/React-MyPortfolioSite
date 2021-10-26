@@ -13,7 +13,7 @@ function Footer() {
     const year = new Date()
     return (
         <div className = {classes.footer}>
-            <p> Copyright &copy; {year.getFullYear()} Esat Yasar</p>
+            <p> Copyright &copy; {year.getFullYear()} Rifat KAZAK</p>
         </div>
     )
 }
