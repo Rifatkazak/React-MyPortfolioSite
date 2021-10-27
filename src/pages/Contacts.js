@@ -76,7 +76,7 @@ export default function Contacts() {
                 </div>
                 
                 <div class="find-widget">
-                  Website :  <a href="https://www.linkedin.com/in/rifat-kazak/">Linkedin Profile</a>
+                  Website :  <a href="https://portfoliositeconfig.herokuapp.com/">Linkedin Profile</a>
                 </div>
                 <CardActions className={classes.icons}>
             <a href="mailto:rifatkazak20@gmail.com" className={classes.link}>
