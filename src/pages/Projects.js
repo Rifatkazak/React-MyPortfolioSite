@@ -44,7 +44,7 @@ export default function TitlebarBelowImageList() {
 {data_list.map((item) => {
   return (
     <div class="card me-3 ms-2 mb-3" style={{width: "18rem"}}>
-        <img src={item.image} class="card-img-top" alt="images"/>
+        <img src={item.image} class="card-img-top" alt={item.title}/>
         <div class="card-body">
             <h5 class="card-title">{item.title}</h5>
             <p class="card-text">{item.content}</p>
