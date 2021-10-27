@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
     listStyle :"none",
   },
   bodyText:{
-    fontSize: "1rem",
+    fontSize: "1.2rem",
     fontWeight : "500",
   },
 
@@ -69,7 +69,6 @@ export default function Home() {
       <Container
         maxWidth="xl"
         sx={{ display: "flex"}}
-        className={styles.cardContainer}
       >
         <Card sx={{ minWidth: 300 }} className={classes.card}>
           <Avatar
@@ -82,7 +81,7 @@ export default function Home() {
             <Typography gutterBottom variant="h5" component="div">
               Rifat KAZAK 
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body1" color="text.secondary">
               Full Stack Developer
             </Typography>
           </CardContent>

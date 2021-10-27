@@ -60,7 +60,7 @@ function Comments() {
                     <Typography variant="h5" component="div">
                          {item.name}
                     </Typography>
-                    <Typography variant="body2">
+                    <Typography variant="body1">
                         {item.content}
                     </Typography>
                     <CardActions>

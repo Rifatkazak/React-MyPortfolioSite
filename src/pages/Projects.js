@@ -38,7 +38,7 @@ export default function TitlebarBelowImageList() {
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-<h2 className="text-center mt-4">My Projects</h2>
+<h2 className="text-center mt-4 ">My Projects</h2>
 <div class=" d-flex justify-content-center flex-wrap mt-5 mb-3 " >
   
 {data_list.map((item) => {
