@@ -8,7 +8,6 @@ import TaskTracker from "../assets/TaskTracker.jpg"
 import ToDoList from "../assets/ToDoList.jpg"
 
 
-
 export default function TitlebarBelowImageList() {
   return (
     <div>
@@ -38,6 +37,64 @@ export default function TitlebarBelowImageList() {
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+{/* <div className='swiper-container'>
+    <div className='swiper-wrapper'>
+        <div className='slider-item swiper-slide'> 
+          <div className='slider-image-wrapper'> 
+              <img className='slider-image' src={ToDoList}> </img>
+          </div>
+          <div className='slider-item-content'>
+              <h1>To Do List</h1>
+              <p>I structured my own To Do List HTML5, CSS3, Javascript</p>
+          </div>
+        </div>
+        <div className='slider-item swiper-slide'> 
+          <div className='slider-image-wrapper'> 
+              <img className='slider-image' src={weatherApp}> </img>
+          </div>
+          <div className='slider-item-content'>
+              <h1>Wheather App</h1>
+              <p>I structured my own Weather App HTML5, CSS3, Javascript, React.js. I received API information from Openweather. I used context structure and styled module CSS.</p>
+          </div>
+        </div>
+        <div className='slider-item swiper-slide'> 
+          <div className='slider-image-wrapper'> 
+              <img className='slider-image' src={BlogApp}> </img>
+          </div>
+          <div className='slider-item-content'>
+              <h1>Blog App</h1>
+              <p>I structured my own Blog app HTML5, CSS3, Javascript, React.js, Bootstrap. I create realtime database with firebase and ı deploy it with Heroku.</p>
+          </div>
+        </div>
+        <div className='slider-item swiper-slide'> 
+          <div className='slider-image-wrapper'> 
+              <img className='slider-image' src={RecipeApp}> </img>
+          </div>
+          <div className='slider-item-content'>
+              <h1>Recipe APP</h1>
+              <p>I structured my own To Do List HTML5, CSS3, Javascript</p>
+          </div>
+        </div>
+        <div className='slider-item swiper-slide'> 
+          <div className='slider-image-wrapper'> 
+              <img className='slider-image' src={TaskTracker}> </img>
+          </div>
+          <div className='slider-item-content'>
+              <h1>Task Tracker</h1>
+              <p>I structured my own contacts app HTML5, CSS3, Javascript, React.js, Bootstrap. I create realtime database with firebase and ı deploy it with Heroku.</p>
+          </div>
+        </div>
+        <div className='slider-item swiper-slide'> 
+          <div className='slider-image-wrapper'> 
+              <img className='slider-image' src={ContactsApp}> </img>
+          </div>
+          <div className='slider-item-content'>
+              <h1>Contacts App</h1>
+              <p>I structured my own contacts app HTML5, CSS3, Javascript, React.js, Bootstrap. I create realtime database with firebase and ı deploy it with Heroku.</p>
+          </div>
+        </div>
+    </div>
+</div> */}
 <h2 className="text-center mt-4 ">My Projects</h2>
 <div class=" d-flex justify-content-center flex-wrap mt-5 mb-3 " >
   
@@ -72,7 +129,7 @@ const data_list = [{
 {
   image : ContactsApp,
   title : "Contacts App",
-  content : "I structured my own contacts app HTML5, CSS3, Javascript, React.js, Bootstrap. I create realtime database with firebase and ı deploy it with Heroku."
+  content : "c"
 },
 {
   image : TaskTracker,
